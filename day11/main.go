@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"strings"
+	"time"
 )
 
 const (
@@ -52,6 +53,10 @@ func main() {
 		}
 		count = occu(b)
 		a = cop(b)
+
+		fmt.Println("\n\n\n")
+		p(a)
+		time.Sleep(time.Second / 2)
 	}
 
 	fmt.Println("Loops,", loop)
